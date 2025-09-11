@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
+import 'stubs/google_mobile_ads_stub.dart'
+    if (dart.library.io) 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'stubs/in_app_purchase_stub.dart'
+    if (dart.library.io) 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/intl.dart';
 
