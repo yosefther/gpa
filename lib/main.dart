@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -19,12 +20,14 @@ Future<void> main() async {
   await Hive.initFlutter();
   await Hive.openBox('app');
 
-// Google Mobile Ads (no Ad widgets yet — just initialization stub)
-  await MobileAds.instance.initialize();
+// Google Mobile Ads & IAP are not supported on web.
+  if (!kIsWeb) {
+    await MobileAds.instance.initialize();
 
-// In‑app purchase instance (no flows yet — just a reference to ensure the plugin links)
-// ignore: unused_local_variable
-  final iap = InAppPurchase.instance;
+    // In‑app purchase instance (no flows yet — just a reference to ensure the plugin links)
+    // ignore: unused_local_variable
+    final iap = InAppPurchase.instance;
+  }
 
   runApp(const ProviderScope(child: App()));
 }

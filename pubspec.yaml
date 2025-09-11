@@ -1,36 +1,26 @@
-environment:
-  sdk: ">=3.4.0 <4.0.0"
-
-
-name: flutter_courses_settings
-publish_to: "none"
+name: gpa
 description: Minimal starter with Riverpod + GoRouter + Hive + Ads/IAP
+publish_to: "none"
 version: 0.1.0
 
+environment:
+  sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  go_router:
+  go_router: ^14.2.0
   flutter_riverpod: ^3.0.0
   google_mobile_ads: ^6.0.0
   in_app_purchase: ^3.2.3
   hive_flutter: ^1.1.0
   intl: ^0.20.2
-flutter_riverpod:
-hive:
-hive_flutter:
-intl:
-google_mobile_ads:
-in_app_purchase:
-
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints:
-
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
