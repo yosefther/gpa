@@ -1,19 +1,36 @@
-name: gpa
-description: "A new Flutter project."
-publish_to: 'none'
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+
+name: flutter_courses_settings
+publish_to: "none"
+description: Minimal starter with Riverpod + GoRouter + Hive + Ads/IAP
 version: 0.1.0
 
-environment:
-  sdk: ^3.9.2
 
 dependencies:
   flutter:
     sdk: flutter
+  cupertino_icons: ^1.0.2
+  go_router:
+  flutter_riverpod: ^3.0.0
+  google_mobile_ads: ^6.0.0
+  in_app_purchase: ^3.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.20.2
+flutter_riverpod:
+hive:
+hive_flutter:
+intl:
+google_mobile_ads:
+in_app_purchase:
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints:
+
 
 flutter:
   uses-material-design: true
