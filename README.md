@@ -1,3 +1,6 @@
+# note i am just experimenting wity vibe coding 
+
+
 # 📊 GPA Tracker
 
 A simple, offline-first mobile app built with **Flutter** for tracking courses, grades, and GPA. Designed for students who want a lightweight tool to calculate **Term GPA** and **Cumulative GPA (CGPA)** without needing an internet connection.
